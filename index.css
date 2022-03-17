@@ -1,0 +1,41 @@
+.main {
+  display: flex;
+  justify-content: space-around;
+}
+.heading {
+  font-size: 5rem;
+}
+.sub-heading {
+  font-size: 3rem;
+  width: 30vw;
+}
+.banner img {
+  /* margin: auto; */
+  margin-top: 10rem;
+  margin-right: 10rem;
+}
+form {
+  margin-top: 5vw;
+}
+
+.upload_file {
+  font-size: 2rem;
+}
+.submitButton {
+  margin-top: 2vw;
+  font-size: 2rem;
+}
+@media screen and (max-width: 1100px) {
+  .banner {
+    display: none;
+  }
+}
+@media screen and (max-width: 600px) {
+  .heading {
+    font-size: 3rem;
+  }
+  .sub-heading {
+    font-size: 1.2rem;
+    width: 30vw;
+  }
+}

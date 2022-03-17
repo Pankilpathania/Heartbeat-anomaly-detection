@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heart Anomaly Detection</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="main">
+        <div class="content" id="beatContainer"> 
+            <div class="heading">Heart Anomaly Detection</div>
+            <br>
+            <br>
+            <div class="sub-heading">
+                We will display some sub heading here.
+            </div>
+            <form method="post" enctype="multipart/form-data">
+                <input class="upload_file" type="file" name="file"/>
+                <br>
+                <input type="submit" id="submitButton" class="submitButton" value="Detect"/>
+            </form>
+
+            {% if transcript!="" %}
+<div id="beatSubmitContainer">
+    <p style="font-size: 2rem;">Result</p>
+    <p id="beatText" style="font-size: 2rem;">{{transcript}}</p>
+</div>
+{% endif %}
+            
+        </div>
+        <div class="banner">
+            <img src="banner.svg" alt="Healthy Heart">
+        </div>
+
+    </div>
+    
+</body>
+</html>
